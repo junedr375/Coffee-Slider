@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CoffeeTech Slider</title>
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.js"></script>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.22/jquery-ui.js"></script>
+    <script src="http://malsup.github.io/jquery.cycle.all.js"></script>
+</head>
+<body>
+	<div id="container">
+		<h1>CoffeeTech</h1>
+		<div class="slider">
+			<img src="coffee1.jpg" width="640" height="426">
+			<img src="coffee2.jpg" width="640" height="426">
+			<img src="coffee3.jpg" width="640" height="426">
+			<img src="coffee4.jpg" width="640" height="426">
+			
+			<img src="coffee5.jpg" width="640" height="426">
+		</div>
+		<ul id="nav">
+			<li id="prev"><i class="fas fa-arrows-alt-v"></i>
+<a href="#">Previous</a></li>
+			<li id="next"><a href="#">Next</a></li>
+		</ul>
+
+	</div>
+	<script>
+		$(document).ready(function(){
+			$('.slider').cycle({
+				fx: 'fade',
+				pause: 1,
+				prev: '#prev',
+				next: '#next'
+			});
+		});
+	</script>
+
+</body>
+</html>
